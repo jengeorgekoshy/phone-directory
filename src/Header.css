@@ -1,0 +1,9 @@
+.header {
+  width: 100%;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-size: 25px;
+}
