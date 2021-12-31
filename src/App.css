@@ -10,20 +10,6 @@
   padding-top: 10px;
 }
 
-.add {
-  background-color: rgb(38, 226, 38);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  font-size: 20px;
-}
-
-.add:hover {
-  background-color: rgb(73, 163, 73);
-}
-
 .content {
   display: flex;
   padding: 10px 0px;
@@ -42,17 +28,4 @@
 
 .phone {
   width: 40%;
-}
-
-.delete {
-  background-color: rgb(223, 18, 11);
-  color: #fff;
-  border: none;
-  padding: 5px;
-  border-radius: 4px;
-  font-size: 18px;
-}
-
-.delete:hover {
-  background-color: rgb(190, 35, 35);
 }

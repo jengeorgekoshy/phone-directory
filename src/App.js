@@ -1,5 +1,6 @@
 import Header from './Header';
 import './App.css';
+import Button from './Button';
 
 function App() {
   const subscribers = [
@@ -15,11 +16,15 @@ function App() {
     },
   ];
 
+  const clickHandler = (msg) => {
+    alert(msg);
+  };
+
   return (
     <div>
       <Header heading="Phone directory" />
       <div className="container">
-        <button className="add">ADD</button>
+        <Button name="ADD" backColor="rgb(38, 226, 38)" color="#fff" />
         <div className="content">
           <p className="name heading">Name</p>
           <p className="phone heading">Phone</p>
@@ -30,7 +35,13 @@ function App() {
             <div className="content">
               <p className="name ">{sub.name}</p>
               <p className="phone ">{sub.phone}</p>
-              <button className="delete">DELETE</button>
+              <Button
+                className="delete"
+                onClick={clickHandler.bind(this, 'Delete handler clicked')}
+                name="DELETE"
+                backColor="rgb(223, 18, 11)"
+                color="#fff"
+              />
             </div>
           );
         })}
